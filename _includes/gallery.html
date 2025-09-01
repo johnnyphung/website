@@ -1,0 +1,11 @@
+<div id="gallery" class="{{ section.background_style }}">
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      {% for image in section.gallery %}
+      <div class="col-lg-4 col-sm-4">
+          <img class="img-fluid" src="assets/img/gallery/{{ image.photo }}" /> 
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
